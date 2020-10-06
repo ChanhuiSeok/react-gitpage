@@ -129,8 +129,8 @@ table {
 }
 a{
   text-decoration:none;
-  color:black;
+  color:rgb(255, 255, 255);
 }
 a:hover{
-  color:rgb(15, 76, 155);
+  color:rgb(244, 218, 255);
 }

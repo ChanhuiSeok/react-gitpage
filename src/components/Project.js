@@ -17,7 +17,6 @@ const Container = styled.div`
   margin-bottom:100px;
   @media(max-width:700px){
     width:53%;
-    margin-bottom:40px;
     height:350px;
   }
 `;
@@ -52,16 +51,17 @@ const About = () => {
 
   return (
     <div {...animatedItem}>
-      
+
       <TitleContainer>
-        <Title>ABOUT</Title>
+        <Title>PROJECT</Title>
       </TitleContainer>
-      <Zoom left>
-      <Container>
-        <ProfileImg src={'profile.png'}></ProfileImg>
-      </Container>
+
+      <Zoom>
+        <Container>
+
+        </Container>
       </Zoom>
-      
+
     </div>
   );
 };

@@ -1,16 +1,15 @@
 import React from 'react';
 import styled from "styled-components";
-
 import Zoom from 'react-reveal/Zoom';
+
 import { useScrollFadeIn } from '../hooks';
 
 const Container = styled.div`
   width:900px;
   height:600px;
   border-radius:20px;
-  box-shadow:0px 0px 10px 10px rgba(0,0,0,0.05);
   padding:40px;
-  background-color:white;
+  border:7px solid white;
   text-align:center;
   position:relative;
   z-index:2;
@@ -25,7 +24,7 @@ const Container = styled.div`
 const TitleContainer = styled.div`
   position:relative;
   z-index:1;
-  top:30px;
+  top:0px;
   left:-30px;
 `;
 const Title = styled.span`
@@ -39,11 +38,11 @@ const ProfileImg = styled.img`
   width:20%;
   border-radius:10px;
 `;
-const BlankImg = styled.div`
-  margin-top:50px;
-  width:100%;
-  height:300px;
-  background-color:#F1FAF9;
+const Card = styled.div`
+  width:40%;
+  height:50%;
+  background-color:white;
+  opacity:0.5;
   border-radius:10px;
 `;
 
@@ -52,16 +51,17 @@ const About = () => {
 
   return (
     <div {...animatedItem}>
-      
+
       <TitleContainer>
-        <Title>ABOUT</Title>
+        <Title>INTERESTS</Title>
       </TitleContainer>
       <Zoom left>
-      <Container>
-        <ProfileImg src={'profile.png'}></ProfileImg>
-      </Container>
+        <Container>
+          <Card></Card>
+          <Card></Card>
+        </Container>
       </Zoom>
-      
+
     </div>
   );
 };
