@@ -67,7 +67,7 @@ const FooterText = styled.span`
 const Home = () => {
 
   $(document).ready(function () {
-    var stars = 700;
+    var stars = 800;
     var $stars = $(".stars");
     var $face = $(".face");
 

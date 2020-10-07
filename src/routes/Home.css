@@ -41,6 +41,15 @@ figure {
 .blinking{
   animation:blink 1s ease-in-out infinite alternate;
 }
+.blinking1{
+  animation:blink 1s ease-in-out infinite alternate;
+}
+.blinking2{
+  animation:blink 1.5s ease-in-out infinite alternate;
+}
+.blinking3{
+  animation:blink 2s ease-in-out infinite alternate;
+}
 
 @keyframes blink{
   0% {opacity:0.1;}

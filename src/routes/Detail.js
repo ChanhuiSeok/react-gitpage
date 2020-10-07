@@ -9,7 +9,7 @@ import Project from '../components/Project';
 import $ from 'jquery';
 
 const Cube = styled.div`
-  margin-top:400px;
+  margin-top:200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,7 +95,10 @@ const Detail = () => {
         <Bounce>
           <Title className='title'>CHANHUI SEOK</Title>
         </Bounce>
-        <SubTitle className='blinking'>Click here and Scroll</SubTitle>
+        <SubTitle className='blinking'>Scroll the screen</SubTitle>
+        <SubTitle className='blinking1'>∨</SubTitle>
+        <SubTitle className='blinking2' style={{marginTop:'-1px'}}>∨</SubTitle>
+        <SubTitle className='blinking3' style={{marginTop:'-1px'}}>∨</SubTitle>
       </Container>
       <About></About>
       <Interests></Interests>

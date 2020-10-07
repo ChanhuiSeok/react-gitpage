@@ -13,20 +13,25 @@ const GlobalStyles = createGlobalStyle`
   background:
   radial-gradient(
   farthest-side at bottom left,
-  rgba(165, 129, 243, 0.5), 
+  rgba(7, 195, 226, 0.5), 
   transparent
 ),
 radial-gradient(
+  farthest-corner at top left,
+  rgba(238, 84, 231, 0.6), 
+  transparent 60%
+),
+radial-gradient(
   farthest-corner at top right,
-  rgba(0,189,231, 0.1), 
-  transparent 30%
+  rgba(250, 247, 136, 0.3), 
+  transparent 40%
 ),
 radial-gradient(
   farthest-corner at bottom right,
-  rgba(32,129,215, 0.5), 
+  rgba(250, 247, 136, 0.5), 
   transparent 60%
 );
-  background-color: #12143B;
+  background-color: #184E9E;
   display: flex;
   justify-content: center;
   align-items: center;
