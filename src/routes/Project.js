@@ -3,18 +3,21 @@ import './Home.css';
 import styled from "styled-components";
 import Bounce from 'react-reveal/Bounce';
 import Zoom from 'react-reveal/Zoom';
-import About from '../components/About';
-import Interests from '../components/Interests';
-import ProjectAlt from '../components/ProjectAlt';
+import ProjectCard from '../components/ProjectCard';
 import { Link } from "react-router-dom";
 import $ from 'jquery';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faMicroblog } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faLaptopCode, faNetworkWired } from '@fortawesome/free-solid-svg-icons'
 
+const Head = styled.div`
+  position:absolute;
+  top:5%;
+  left:10%;
+  color:white;
+  font-size:15px;
+  font-weight:100;
+`;
 
 const Cube = styled.div`
-  margin-top:400px;
+  margin-top:200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,7 +42,6 @@ const Title = styled.span`
   @media(max-width:800px){
     font-size:45px;
   }
-  margin-bottom:80px;
 `;
 
 const SubTitle = styled.span`
@@ -64,35 +66,16 @@ const FooterText = styled.span`
   font-weight:100;
 `;
 
-const Home = () => {
-
+const Project = () => {
   $(document).ready(function () {
-    var stars = 800;
-    var $stars = $(".stars");
-    var $face = $(".face");
-
-    var r = 700;
-    for (var i = 0; i < stars; i++) {
-      var $star = $("<div/>").addClass("star");
-      $stars.append($star);
-    }
-    $(".star").each(function () {
-      var cur = $(this);
-      var s = 0.2 + (Math.random() * 1);
-      var curR = r + (Math.random() * 300);
-      cur.css({
-        transformOrigin: "0 0 " + curR + "px",
-        transform: " translate3d(0,0,-" + curR + "px) rotateY(" + (Math.random() * 360) + "deg) rotateX(" + (Math.random() * -50) + "deg) scale(" + s + "," + s + ")"
-
-      })
-    })
-    $('body').css('overflow','hidden');
+    $('body').css('overflow','auto');
   });
-
   return (
     <>
-      <div className="stars">
-      </div>
+    <Head>
+    <span style={{opacity:'0.5'}}><a href='/'>Home</a></span> > <span style={{opacity:'0.5'}}><Link to={'/detail'}>Detail</Link></span>
+      <span> > Projects</span>
+    </Head>
       <Zoom>
         <Cube>
           <figure>
@@ -124,21 +107,16 @@ const Home = () => {
         <Bounce>
           <Title className='title'>CHANHUI SEOK</Title>
         </Bounce>
-        <Link to={'/detail'} style={{marginTop:'50px'}}>
-          <SubTitle className='blinking'>Click here for Exploring</SubTitle>
-        </Link>
-        <SubTitle style={{opacity:0.8, fontSize:'35px'}}><a href='https://github.com/chanhuiseok'><FontAwesomeIcon icon={faGithub}/></a>
-        <a href='mailto:chanhuicom@gmail.com'> <FontAwesomeIcon icon={faEnvelope}/></a>
-        <a href='https://chanhuiseok.github.io/'> <FontAwesomeIcon icon={faMicroblog}/></a>
-        </SubTitle>
+        <SubTitle className='blinking'>Scroll the screen</SubTitle>
+        <SubTitle className='blinking1'>∨</SubTitle>
+        <SubTitle className='blinking2' style={{marginTop:'-1px'}}>∨</SubTitle>
+        <SubTitle className='blinking3' style={{marginTop:'-1px'}}>∨</SubTitle>
       </Container>
-      <About></About>
-      <Interests></Interests>
-      <ProjectAlt></ProjectAlt>
+      <ProjectCard></ProjectCard>
 
       <Footer><FooterText>chanhuiseok</FooterText></Footer>
     </>
   );
 };
 
-export default Home;
+export default Project;

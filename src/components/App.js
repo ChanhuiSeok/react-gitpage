@@ -2,12 +2,14 @@ import React from 'react';
 import { HashRouter as Router, Route } from "react-router-dom"
 import Home from "../routes/Home"
 import Detail from "../routes/Detail"
+import Project from "../routes/Project"
 import { createGlobalStyle } from 'styled-components'
 import ScrollTop from './ScrollTop'
 
 const GlobalStyles = createGlobalStyle`
   body {
   font-family: 'Noto Sans KR', serif;
+  font-weight:100;
   min-height: 100vh;
   margin: 0;  
   background:
@@ -51,11 +53,11 @@ radial-gradient(
 function App() {
   return (
     <>
-
       <GlobalStyles />
       <Router>
           <Route exact path="/" component={Home} />
           <Route exact path="/detail" component={Detail} />
+          <Route exact path="/project" component={Project} />
       </Router>
     </>
   );

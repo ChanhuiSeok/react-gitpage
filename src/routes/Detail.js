@@ -5,8 +5,17 @@ import Bounce from 'react-reveal/Bounce';
 import Zoom from 'react-reveal/Zoom';
 import About from '../components/About';
 import Interests from '../components/Interests';
-import Project from '../components/Project';
+import ProjectAlt from '../components/ProjectAlt';
+import { Link } from "react-router-dom";
 import $ from 'jquery';
+const Head = styled.div`
+  position:absolute;
+  top:5%;
+  left:10%;
+  color:white;
+  font-size:15px;
+  font-weight:100;
+`;
 
 const Cube = styled.div`
   margin-top:200px;
@@ -64,6 +73,10 @@ const Detail = () => {
   });
   return (
     <>
+    <Head>
+    <span style={{opacity:'0.5'}}><a href='/'>Home</a></span> > <span><Link to={'/detail'}>Detail </Link></span>
+      > <span style={{opacity:'0.5'}}><Link to={'/project'}>Projects</Link></span>
+    </Head>
       <Zoom>
         <Cube>
           <figure>
@@ -102,7 +115,7 @@ const Detail = () => {
       </Container>
       <About></About>
       <Interests></Interests>
-      <Project></Project>
+      <ProjectAlt></ProjectAlt>
 
       <Footer><FooterText>chanhuiseok</FooterText></Footer>
     </>
