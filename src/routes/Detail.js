@@ -54,15 +54,17 @@ const SubTitle = styled.span`
   cursor:pointer;
 `;
 
+
 const Footer = styled.div`
   postion:absolute;
   bottom:0;
   color:white;
   text-align:center;
+  margin:10px;
 `;
 
 const FooterText = styled.span`
-  font-size:10px;
+  font-size:13px;
   opacity:0.8;
   font-weight:100;
 `;

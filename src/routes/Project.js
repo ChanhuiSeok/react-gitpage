@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './Home.css';
 import styled from "styled-components";
 import Bounce from 'react-reveal/Bounce';
@@ -58,10 +58,11 @@ const Footer = styled.div`
   bottom:0;
   color:white;
   text-align:center;
+  margin:10px;
 `;
 
 const FooterText = styled.span`
-  font-size:10px;
+  font-size:13px;
   opacity:0.8;
   font-weight:100;
 `;
@@ -70,6 +71,9 @@ const Project = () => {
   $(document).ready(function () {
     $('body').css('overflow','auto');
   });
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
     <Head>

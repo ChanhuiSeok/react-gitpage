@@ -5,12 +5,12 @@ import Fade from 'react-reveal/Fade';
 import { useScrollFadeIn } from '../hooks';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCopyright } from '@fortawesome/free-solid-svg-icons'
-import { faPython, faJs } from '@fortawesome/free-brands-svg-icons'
+import { faPython, faJs, faHtml5, faCss3, faJava, faReact } from '@fortawesome/free-brands-svg-icons'
 
 const Container = styled.div`
   margin:0 auto;
   text-align:center;
-  margin-bottom:250px;
+  margin-bottom:100px;
 `;
 
 const TitleContainer = styled.div`
@@ -66,9 +66,9 @@ const CardsTitle = styled.p`
 const CardsSubTitle = styled.p`
   margin:10px;
   font-weight:100;
-  font-size:17px;
+  font-size:18px;
   @media (max-width:700px){
-    font-size:14px;
+    font-size:15px;
   }
 `;
 
@@ -99,54 +99,61 @@ const ProjcetCard = () => {
           {/* 1. 학부연구생 */}
           <Cards style={{ backgroundSize: 'cover', backgroundImage: "url('/ytest.png')" }}>
             <CardsTitle>Secure Memory Overhead 분석</CardsTitle>
-            <CardsSubTitle>기간 : 2019.01 ~ 2019.12 </CardsSubTitle>
-            <CardsSubTitle>사용언어 : <FontAwesomeIcon icon={faCopyright} /> / <FontAwesomeIcon icon={faPython} /></CardsSubTitle>
+            <CardsSubTitle>· 2019.01 ~ 2019.12 </CardsSubTitle>
+            <CardsSubTitle>· <FontAwesomeIcon icon={faCopyright} /> / <FontAwesomeIcon icon={faPython} /></CardsSubTitle>
 
           </Cards>
         </Card>
         <Card>
-          {/* 2. 경북대 코로나 알리미 */}
-          <Cards style={{ backgroundSize: 'cover', backgroundImage: "url('/ytest.png')" }}>
-            <CardsTitle>경북대 코로나 알리미 제작</CardsTitle>
-            <CardsSubTitle>기간 : 2019.01 ~ 2019.12 </CardsSubTitle>
-            <CardsSubTitle>사용언어 : <FontAwesomeIcon icon={faCopyright} /> / <FontAwesomeIcon icon={faPython} /></CardsSubTitle>
+          {/* 2. 교내 코로나 알리미 */}
+          <Cards style={{ backgroundSize: 'cover', backgroundImage: "url('/ctest.png')" }}>
+            <CardsTitle>교내 코로나 알리미 제작</CardsTitle>
+            <CardsSubTitle>· 2020.02 ~ ing </CardsSubTitle>
+            <CardsSubTitle>· <FontAwesomeIcon icon={faJs} /> / <FontAwesomeIcon icon={faHtml5} /> / <FontAwesomeIcon icon={faCss3} /></CardsSubTitle>
 
           </Cards>
         </Card>
         <Card>
           {/* 3. 제3회 부산 ICT융합 해커톤 */}
-          <Cards style={{ backgroundSize: 'cover', backgroundImage: "url('/ytest.png')" }}>
+          <Cards style={{ backgroundSize: 'cover', backgroundImage: "url('/btest.png')" }}>
             <CardsTitle>제3회 부산 ICT융합 해커톤</CardsTitle>
-            <CardsSubTitle>기간 : 2019.01 ~ 2019.12 </CardsSubTitle>
-            <CardsSubTitle>사용언어 : <FontAwesomeIcon icon={faCopyright} /> / <FontAwesomeIcon icon={faPython} /></CardsSubTitle>
-
-          </Cards>
-        </Card>
-        <Card>
-          {/* 4. 제 5회 글로벌 이노베이터 페스타 */}
-          <Cards style={{ backgroundSize: 'cover', backgroundImage: "url('/ytest.png')" }}>
-            <CardsTitle>제 5회 글로벌 이노베이터 페스타</CardsTitle>
-            <CardsSubTitle>기간 : 2019.01 ~ 2019.12 </CardsSubTitle>
-            <CardsSubTitle>사용언어 : <FontAwesomeIcon icon={faCopyright} /> / <FontAwesomeIcon icon={faPython} /></CardsSubTitle>
+            <CardsSubTitle>· 2018.07 ~ 2018.08 </CardsSubTitle>
+            <CardsSubTitle>· <FontAwesomeIcon icon={faJava} /> </CardsSubTitle>
 
           </Cards>
         </Card>
         <Card>
           {/* 5. UNIST X Naver D2SF X 멋쟁이사자처럼 해커톤 */}
-          <Cards style={{ backgroundSize: 'cover', backgroundImage: "url('/ytest.png')" }}>
+          <Cards style={{ backgroundSize: 'cover', backgroundImage: "url('/ntest.png')" }}>
             <CardsTitle>UNIST X Naver D2SF X 멋쟁이사자처럼 해커톤</CardsTitle>
-            <CardsSubTitle>기간 : 2019.01 ~ 2019.12 </CardsSubTitle>
-            <CardsSubTitle>사용언어 : <FontAwesomeIcon icon={faCopyright} /> / <FontAwesomeIcon icon={faPython} /></CardsSubTitle>
+            <CardsSubTitle>· 2018.11</CardsSubTitle>
+            <CardsSubTitle>· <FontAwesomeIcon icon={faJava} /> </CardsSubTitle>
 
           </Cards>
         </Card>
         <Card>
-          {/* 6. Kartinfo */}
-          <Cards style={{ backgroundSize: 'cover', backgroundImage: "url('/ytest.png')" }}>
-            <CardsTitle>React와 GraphQL로 Kartinfo 웹페이지 제작</CardsTitle>
-            <CardsSubTitle>기간 : 2019.01 ~ 2019.12 </CardsSubTitle>
-            <CardsSubTitle>사용언어 : <FontAwesomeIcon icon={faCopyright} /> / <FontAwesomeIcon icon={faPython} /></CardsSubTitle>
+          {/* 4. 제 5회 글로벌 이노베이터 페스타 */}
+          <Cards style={{ backgroundSize: 'cover', backgroundImage: "url('/gtest.png')" }}>
+            <CardsTitle>제 5회 글로벌 이노베이터 페스타</CardsTitle>
+            <CardsSubTitle>· 2019.11 </CardsSubTitle>
+            <CardsSubTitle>· <FontAwesomeIcon icon={faPython} /></CardsSubTitle>
 
+          </Cards>
+        </Card>
+        <Card>
+          {/* 6. 학생 종합 정보 페이지 */}
+          <Cards style={{ backgroundSize: 'cover', backgroundImage: "url('/htest.png')" }}>
+            <CardsTitle>학생 종합 정보 웹페이지 제작</CardsTitle>
+            <CardsSubTitle>· 2020.06 </CardsSubTitle>
+            <CardsSubTitle>· <FontAwesomeIcon icon={faJs} /> / <FontAwesomeIcon icon={faPython} /> / <FontAwesomeIcon icon={faHtml5} /> / <FontAwesomeIcon icon={faCss3} /></CardsSubTitle>
+          </Cards>
+        </Card>
+        <Card>
+          {/* 7. Kartinfo */}
+          <Cards style={{ backgroundSize: 'cover', backgroundImage: "url('/ktest.png')" }}>
+            <CardsTitle>React와 GraphQL로 Kartinfo 웹페이지 제작</CardsTitle>
+            <CardsSubTitle>· 2019.01 ~ 2019.12 </CardsSubTitle>
+            <CardsSubTitle>· <FontAwesomeIcon icon={faJs} /> / <FontAwesomeIcon icon={faReact} /> / GraphQL</CardsSubTitle>
           </Cards>
         </Card>
         </Fade>
