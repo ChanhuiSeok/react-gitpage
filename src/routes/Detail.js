@@ -49,7 +49,7 @@ const SubTitle = styled.span`
   margin-top:50px;
   letter-spacing :.3em;
   font-size:25px;
-  font-weight:100;
+  font-weight:400;
   color:white;
   cursor:pointer;
 `;
@@ -76,7 +76,7 @@ const Detail = () => {
   return (
     <>
     <Head>
-    <span style={{opacity:'0.5'}}><a href='/'>Home</a></span> > <span><Link to={'/detail'}>Detail </Link></span>
+    <span style={{opacity:'0.5'}}><Link to={'/'}>Home</Link></span> > <span><Link to={'/detail'}>Detail </Link></span>
       > <span style={{opacity:'0.5'}}><Link to={'/project'}>Projects</Link></span>
     </Head>
       <Zoom>
@@ -110,7 +110,7 @@ const Detail = () => {
         <Bounce>
           <Title className='title'>CHANHUI SEOK</Title>
         </Bounce>
-        <SubTitle className='blinking'>Scroll the screen</SubTitle>
+        <SubTitle className='blinking'>화면을 스크롤해 보세요</SubTitle>
         <SubTitle className='blinking1'>∨</SubTitle>
         <SubTitle className='blinking2' style={{marginTop:'-1px'}}>∨</SubTitle>
         <SubTitle className='blinking3' style={{marginTop:'-1px'}}>∨</SubTitle>

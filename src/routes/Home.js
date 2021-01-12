@@ -20,7 +20,7 @@ const Cube = styled.div`
   align-items: center;
   width: 100%;
   @media(max-width:700px){
-    margin-top:250px;
+    margin-top:50px;
   }
 `;
 
@@ -46,9 +46,12 @@ const SubTitle = styled.span`
   margin-top:50px;
   letter-spacing :.3em;
   font-size:25px;
-  font-weight:100;
+  font-weight:400;
   color:white;
   cursor:pointer;
+  @media (max-width:700px){
+    font-size:19px;
+  }
 `;
 
 const Footer = styled.div`
@@ -62,7 +65,7 @@ const Footer = styled.div`
 const FooterText = styled.span`
   font-size:13px;
   opacity:0.8;
-  font-weight:100;
+  font-weight:300;
 `;
 
 const Home = () => {

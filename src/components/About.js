@@ -85,9 +85,9 @@ const Greet = styled.div`
   margin-bottom:7px;
   line-height:23px;
   text-align: justify;
-  font-weight:100;
+  font-weight:300;
   @media(max-width:700px){
-    font-weight:100;
+    font-weight:300;
     font-size:13.5px;
   }
 `;
@@ -97,9 +97,9 @@ const Greet2 = styled.div`
   margin-bottom:40px;
   line-height:23px;
   text-align: justify;
-  font-weight:100;
+  font-weight:300;
   @media(max-width:700px){
-    font-weight:100;
+    font-weight:300;
     font-size:13.5px;
   }
 `;
@@ -120,7 +120,7 @@ const About = () => {
           </div>
           <TextDiv>
               <Name>석찬희(Chanhui Seok)</Name>
-              <TextTitle>경북대학교 컴퓨터학부 재학중(2015~)</TextTitle>
+              <TextTitle>○○대학교 컴퓨터학부 재학중(2015~)</TextTitle>
               <Text style={{color:'#1b556e'}}><FontAwesomeIcon icon={faPaperPlane}/> 가치 있는 성장을 하는 Frontend 개발자</Text>
               
               <Greet>

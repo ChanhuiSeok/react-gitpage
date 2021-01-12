@@ -8,8 +8,8 @@ import ScrollTop from './ScrollTop'
 
 const GlobalStyles = createGlobalStyle`
   body {
-  font-family: 'Noto Sans KR', serif;
-  font-weight:100;
+  font-family: 'Noto Sans KR', 'Apple SD Gothic NEO', 'NanumSquareRound', '삼성 고딕', 'LG스마트 고딕', '나눔 고딕', 'Dotum', '맑은 고딕', sans-serif;
+  font-weight:400;
   min-height: 100vh;
   margin: 0;  
   background:
@@ -54,7 +54,7 @@ function App() {
   return (
     <>
       <GlobalStyles />
-      <Router>
+      <Router basename={"/react-gitpage"}>
           <Route exact path="/" component={Home} />
           <Route exact path="/detail" component={Detail} />
           <Route exact path="/project" component={Project} />

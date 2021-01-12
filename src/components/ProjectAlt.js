@@ -43,7 +43,7 @@ const SubTitle = styled.span`
   margin-top:50px;
   letter-spacing :.3em;
   font-size:25px;
-  font-weight:100;
+  font-weight:500;
   color:white;
   cursor:pointer;
 `;

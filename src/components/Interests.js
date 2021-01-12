@@ -68,7 +68,7 @@ const CardsTitle = styled.p`
 `;
 const CardsText = styled.p`
   font-size:18px;
-  font-weight:300;
+  font-weight:400;
   @media (max-width:700px){
     font-size:15px;
   }
@@ -76,7 +76,7 @@ const CardsText = styled.p`
 const CardsSubText = styled.p`
   margin-top:10px;
   font-size:15px;
-  font-weight:100;
+  font-weight:400;
   @media (max-width:700px){
     font-size:12px;
   }
