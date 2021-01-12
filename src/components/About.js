@@ -120,7 +120,7 @@ const About = () => {
           </div>
           <TextDiv>
               <Name>석찬희(Chanhui Seok)</Name>
-              <TextTitle>○○대학교 컴퓨터학부 재학중(2015~)</TextTitle>
+              <TextTitle>경북대학교 컴퓨터학부 졸업예정(2015~2021)</TextTitle>
               <Text style={{color:'#1b556e'}}><FontAwesomeIcon icon={faPaperPlane}/> 가치 있는 성장을 하는 Frontend 개발자</Text>
               
               <Greet>

@@ -14,7 +14,7 @@ import { faEnvelope, faLaptopCode, faNetworkWired } from '@fortawesome/free-soli
 
 
 const Cube = styled.div`
-  margin-top:400px;
+  margin-top:280px;
   display: flex;
   flex-direction: column;
   align-items: center;
